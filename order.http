@@ -1,0 +1,32 @@
+POST http://localhost:9092/
+Content-Type:application/json
+
+{
+    "orderId":93,
+    "userName":"sathiya",
+    "orderedDate":"april 25",
+    "itemName":"machine",
+    "itemPrice":20000,
+    "paymentMethod":"cod"
+}
+
+###
+GET http://localhost:9092/
+
+###
+PUT http://localhost:9092/
+Content-Type: application/json
+
+{
+   "_id": "67a99c7963a3d25e9c8af02a",
+    "orderId": 93,
+    "userName": "sathiya",
+    "orderedDate": "april 25",
+    "itemName": "machine",
+    "itemPrice": 20000,
+    "paymentMethod": "cod",
+    "__v": 0
+} 
+
+###
+DELETE http://localhost:9092/

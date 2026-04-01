@@ -1,0 +1,26 @@
+POST http://localhost:9090/
+Content-Type:application/json
+
+{
+    "itemName": "machine",
+    "itemPrice": 20000,
+    "userName": "sathiya",
+    "addedAt": "march 25"
+}
+###
+GET http://localhost:9090/
+###
+PUT http://localhost:9090/
+Content-Type: application/json
+
+{
+    "_id": "67a99c9a63a3d25e9c8af02d",
+    "itemName": "ac",
+    "itemPrice": 50000,
+    "userName": "sathiya",
+    "addedAt": "april 25",
+    "__v": 0
+}
+
+###
+DELETE http://localhost:9090/

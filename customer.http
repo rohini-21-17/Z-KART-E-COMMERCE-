@@ -1,0 +1,33 @@
+DELETE http://localhost:9091/
+###
+PUT http://localhost:9091/
+Content-Type: application/json
+
+{
+    "_id": "67a99c71dbbffb6ee56e46fe",
+    "userName": "sathiya",
+    "fullName": "sathiyapriya",
+    "email": "sathiya@gmail.com",
+    "contact": 877654344,
+    "__v": 0
+}
+
+
+###
+GET http://localhost:9091/userName/sathiya 
+###
+GET http://localhost:9091/67a99c71dbbffb6ee56e46fe
+###
+GET http://localhost:9091/
+###
+POST http://localhost:9091/
+Content-Type:application/json
+
+{
+    "userName": "sathiya",
+    "fullName": "sathiyapriya",
+    "email": "sathiya@gmail.com",
+    "contact": 877654344
+}
+###
+GET http://localhost:9091/

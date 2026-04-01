@@ -1,0 +1,29 @@
+GET http://localhost:9094/customer
+###
+###
+GET http://localhost:9094/order
+
+
+###customer
+POST http://localhost:9094/customer
+Content-Type:application/json
+
+{
+    "userName": "sathiya",
+    "fullName": "sathiyapriya",
+    "email": "sathiya@gmail.com",
+    "contact": 877654344
+}
+
+###order
+POST http://localhost:9094/order
+Content-Type:application/json
+
+{
+    "orderId":94,
+    "userName":"sathiya",
+    "orderedDate":"may 25",
+    "itemName":"ac",
+    "itemPrice":50000,
+    "paymentMethod":"online"
+}
